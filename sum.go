@@ -29,3 +29,11 @@ func (s sum) DHash(img image.Image) ([]byte, error) {
 func (s sumHex) DHash(img image.Image) (string, error) {
 	return dHashDefault.SumHex(img)
 }
+
+func (s sum) PHash(img image.Image) ([]byte, error) {
+	return pHashDefault.Sum(img)
+}
+
+func (s sumHex) PHash(img image.Image) (string, error) {
+	return pHashDefault.SumHex(img)
+}

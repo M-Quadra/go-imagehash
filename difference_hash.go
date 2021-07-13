@@ -83,6 +83,7 @@ func (d dHash) Sum(img image.Image) ([]byte, error) {
 
 	return opt, nil
 }
+
 func (d dHash) SumHex(img image.Image) (string, error) {
 	data, err := d.Sum(img)
 	if err != nil {
